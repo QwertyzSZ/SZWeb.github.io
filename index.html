@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkaysGG HUB Key</title>
+</head>
+<body style="height: 100%; text-align: center; margin-top: 20%; background-color: #232323;">
+         
+    <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b7a5cb6" data-id="b7a5cb6" data-element_type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-d60e970 elementor-widget elementor-widget-heading" data-id="d60e970" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+        <style>/*! elementor - v3.6.4 - 13-04-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:"white";font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"><font color="white"> SkaysGG HUB Key </font></h2></div>
+            </div>
+            <div class="elementor-element elementor-element-0df036d elementor-widget elementor-widget-text-editor" data-id="0df036d" data-element_type="widget" data-widget_type="text-editor.default">
+            <div class="elementor-widget-container">
+                        <span data-button-text="Copy" data-button-position="inside" data-button-copy-text="Copied!" data-style="button" data-button-title="Copy to Clipboard" data-selector="pre" class="copy-the-code-wrap copy-the-code-style-button copy-the-code-inside-wrap"><pre style="background-color: #556b2f; color: #ffffff;" class="copy-the-code-target"><strong><code class="language-" style="background-color: #556b2f; color: #ffffff;">ASFW-GAWD-GWAR-FAGE-JTFRD-BRDJ-AWAF</code></strong><button class="copy-the-code-button" data-style="button" title="Copy to Clipboard">Copy</button></pre></span>						</div>
+            </div>
+                </div>
+    </div>
+    <br>
+    <a class="fasc-button fasc-size-large fasc-type-flat fasc-rounded-medium fasc-ico-before dashicons-admin-network" style="background-color: #556b2f; color: #ffffff;" href="generate_key()">GET KEY</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function generate_key()
+        {
+            $.get('/Generate.php', (data) => {
+                let Resp = data && JSON.parse(data);
+                if(!Resp) return alert('failed to get data');
+
+                if (Resp.key) {
+                    document.getElementById('status').value = Resp.key
+                } else if(Resp.solve) {
+                    window.location.href = Resp.solve
+                }
+            })
+        }
+    </script>
+</body>
+</html>
